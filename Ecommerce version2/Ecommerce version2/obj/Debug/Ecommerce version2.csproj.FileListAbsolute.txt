@@ -1,0 +1,26 @@
+D:\codes of c#\Ecommerce\Ecommerce version2\Ecommerce version2\bin\Ecommerce version2.dll.config
+D:\codes of c#\Ecommerce\Ecommerce version2\Ecommerce version2\bin\Ecommerce version2.dll
+D:\codes of c#\Ecommerce\Ecommerce version2\Ecommerce version2\bin\Ecommerce version2.pdb
+D:\codes of c#\Ecommerce\Ecommerce version2\Ecommerce version2\bin\Antlr3.Runtime.dll
+D:\codes of c#\Ecommerce\Ecommerce version2\Ecommerce version2\bin\Microsoft.Web.Infrastructure.dll
+D:\codes of c#\Ecommerce\Ecommerce version2\Ecommerce version2\bin\Newtonsoft.Json.dll
+D:\codes of c#\Ecommerce\Ecommerce version2\Ecommerce version2\bin\System.Web.Helpers.dll
+D:\codes of c#\Ecommerce\Ecommerce version2\Ecommerce version2\bin\System.Web.Mvc.dll
+D:\codes of c#\Ecommerce\Ecommerce version2\Ecommerce version2\bin\System.Web.Optimization.dll
+D:\codes of c#\Ecommerce\Ecommerce version2\Ecommerce version2\bin\System.Web.Razor.dll
+D:\codes of c#\Ecommerce\Ecommerce version2\Ecommerce version2\bin\System.Web.WebPages.Deployment.dll
+D:\codes of c#\Ecommerce\Ecommerce version2\Ecommerce version2\bin\System.Web.WebPages.dll
+D:\codes of c#\Ecommerce\Ecommerce version2\Ecommerce version2\bin\System.Web.WebPages.Razor.dll
+D:\codes of c#\Ecommerce\Ecommerce version2\Ecommerce version2\bin\WebGrease.dll
+D:\codes of c#\Ecommerce\Ecommerce version2\Ecommerce version2\bin\System.Web.Helpers.xml
+D:\codes of c#\Ecommerce\Ecommerce version2\Ecommerce version2\bin\System.Web.Mvc.xml
+D:\codes of c#\Ecommerce\Ecommerce version2\Ecommerce version2\bin\System.Web.Optimization.xml
+D:\codes of c#\Ecommerce\Ecommerce version2\Ecommerce version2\bin\System.Web.Razor.xml
+D:\codes of c#\Ecommerce\Ecommerce version2\Ecommerce version2\bin\System.Web.WebPages.xml
+D:\codes of c#\Ecommerce\Ecommerce version2\Ecommerce version2\bin\System.Web.WebPages.Deployment.xml
+D:\codes of c#\Ecommerce\Ecommerce version2\Ecommerce version2\bin\System.Web.WebPages.Razor.xml
+D:\codes of c#\Ecommerce\Ecommerce version2\Ecommerce version2\bin\Newtonsoft.Json.xml
+D:\codes of c#\Ecommerce\Ecommerce version2\Ecommerce version2\bin\Antlr3.Runtime.pdb
+D:\codes of c#\Ecommerce\Ecommerce version2\Ecommerce version2\obj\Debug\Ecommerce version2.csprojResolveAssemblyReference.cache
+D:\codes of c#\Ecommerce\Ecommerce version2\Ecommerce version2\obj\Debug\Ecommerce version2.dll
+D:\codes of c#\Ecommerce\Ecommerce version2\Ecommerce version2\obj\Debug\Ecommerce version2.pdb
