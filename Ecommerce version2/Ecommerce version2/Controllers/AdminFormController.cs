@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Ecommerce_version2.Models;
 
 namespace Ecommerce_version2.Controllers
 {
@@ -15,6 +16,23 @@ namespace Ecommerce_version2.Controllers
             return View();
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Index(AdminForm AdminForm)
+        {
+            if (ModelState.IsValid && AdminForm.adminName == "admin" && AdminForm.password == "admin") 
+                return RedirectToAction("Admin");
+            else
+            {
+                ModelState.AddModelError("AdminName", "chinchopa");
+                return View("Index", AdminForm);
+            }
+
+        }
+        public ActionResult Admin()
+        {
+            return View();
+        }
         //
         // GET: /AdminForm/Details/5
         public ActionResult Details(int id)
@@ -92,6 +110,11 @@ namespace Ecommerce_version2.Controllers
             {
                 return View();
             }
+        }
+
+        public ActionResult ADDSubAdmin()
+        {
+            return View();
         }
     }
 }
