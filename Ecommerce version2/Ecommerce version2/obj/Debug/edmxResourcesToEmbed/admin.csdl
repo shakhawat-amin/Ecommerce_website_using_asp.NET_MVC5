@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="adminModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="admin">
+    <Key>
+      <PropertyRef Name="idAdmin" />
+    </Key>
+    <Property Name="idAdmin" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idUser" Type="Int32" Nullable="false" />
+    <Property Name="AdminRole" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="user" Relationship="Self.AdminUser" FromRole="admin" ToRole="user" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="idUser" />
+    </Key>
+    <Property Name="idUser" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="userEmail" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="userpassword" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="admins" Relationship="Self.AdminUser" FromRole="user" ToRole="admin" />
+  </EntityType>
+  <Association Name="AdminUser">
+    <End Role="user" Type="Self.user" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="admin" Type="Self.admin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user">
+        <PropertyRef Name="idUser" />
+      </Principal>
+      <Dependent Role="admin">
+        <PropertyRef Name="idUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="adminEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="admins" EntityType="Self.admin" />
+    <EntitySet Name="users" EntityType="Self.user" />
+    <AssociationSet Name="AdminUser" Association="Self.AdminUser">
+      <End Role="user" EntitySet="users" />
+      <End Role="admin" EntitySet="admins" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

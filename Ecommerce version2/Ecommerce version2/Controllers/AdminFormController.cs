@@ -9,6 +9,7 @@ namespace Ecommerce_version2.Controllers
 {
     public class AdminFormController : Controller
     {
+        adminEntities db = new adminEntities();
         //
         // GET: /AdminForm/
         public ActionResult Index()
@@ -18,14 +19,33 @@ namespace Ecommerce_version2.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Index(AdminForm AdminForm)
+        public ActionResult Index(user user)
         {
-            if (ModelState.IsValid && AdminForm.adminName == "admin" && AdminForm.password == "admin") 
-                return RedirectToAction("Admin");
+            if (ModelState.IsValid)
+            {
+                var user1 = db.users.Where(model => model.UserName == user.UserName && model.userpassword == user.userpassword).First();
+                if (user1 != null)
+                {
+                    //user1 = user2.First();
+                
+                    var admin = db.admins.Where(model => model.idUser == user1.idUser).First();
+                    if (admin.AdminRole == "admin")
+                        return View("admin");
+                    else
+                        return View("subadmin", admin);
+                }
+                else
+                {
+                    ModelState.AddModelError("UserName", "chinchopa");
+                    return View("Index", user);
+ 
+                }
+            }
+             
             else
             {
-                ModelState.AddModelError("AdminName", "chinchopa");
-                return View("Index", AdminForm);
+                ModelState.AddModelError("UserName", "chinchopa2");
+                return View("Index", user);
             }
 
         }

@@ -49,4 +49,5 @@ D:\codes of c#\Ecommerce\Ecommerce_website_using_asp.NET_MVC5\Ecommerce version2
 D:\codes of c#\Ecommerce\Ecommerce_website_using_asp.NET_MVC5\Ecommerce version2\Ecommerce version2\bin\Antlr3.Runtime.pdb
 D:\codes of c#\Ecommerce\Ecommerce_website_using_asp.NET_MVC5\Ecommerce version2\Ecommerce version2\obj\Debug\Ecommerce version2.dll
 D:\codes of c#\Ecommerce\Ecommerce_website_using_asp.NET_MVC5\Ecommerce version2\Ecommerce version2\obj\Debug\Ecommerce version2.pdb
-D:\codes of c#\Ecommerce\Ecommerce_website_using_asp.NET_MVC5\Ecommerce version2\Ecommerce version2\obj\Debug\Ecommerce version2.csprojResolveAssemblyReference.cache
+D:\codes of c#\Ecommerce\Ecommerce_website_using_asp.NET_MVC5\Ecommerce version2\Ecommerce version2\bin\EntityFramework.dll
+D:\codes of c#\Ecommerce\Ecommerce_website_using_asp.NET_MVC5\Ecommerce version2\Ecommerce version2\bin\EntityFramework.xml
